@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quick ToDo: A Simple List-Maker</title>
+    <link href='http://fonts.googleapis.com/css?family=PT+Mono|Lato:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" charset="utf-8">    
+  </head>
+  <body>
+    <h4 id="intro">a vanilla JS to-do list.</h4>
+    <div class="container">
+      <p>
+        <h3>Add Item</h3>
+        <input id="newTask" type="text" autofocus>
+        <button id="addBtn">Add</button>
+      </p>
+      
+      <h3>Todo</h3>
+      <ul id="incompleteTasks">
+        <li><input type="checkbox">
+            <label>Pay Bills</label>
+            <input type="text">
+            <button class="edit">Edit</button>
+            <button class="delete">Delete</button>
+        </li>
+        <li class="editMode"><input type="checkbox">
+            <label>Go Shopping</label>
+            <input type="text" value="Go Shopping">
+            <button class="edit">Save</button>
+            <button class="delete">Delete</button></li>
+      </ul>
+      
+      <h3>Completed</h3>
+      <ul id="completedTasks">
+        <li><input type="checkbox" checked>
+            <label>See the Doctor</label>
+            <input type="text"><button class="edit">Edit</button>
+            <button class="delete">Delete</button>
+        </li>
+      </ul>
+    </div>
+
+    <script type="text/javascript" src="app.js"></script>
+
+  </body>
+</html>
