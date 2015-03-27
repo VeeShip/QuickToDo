@@ -41,8 +41,6 @@ var createNewTaskElement = function(taskString) {
   return listItem;
 }
 
-
-
 //Add a new task
 var addTask = function() {
   console.log("Add task...");
